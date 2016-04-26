@@ -3,7 +3,7 @@
 
 Room::Room(int *newRoomType, Player *newPlayer)
 {
-	int guiEnter;
+	int guiEnter = 0;
 	// GUI: Print to screen "Enter the room?"
 	// guiEnter = [return 1 for enter, 0 for cancel];
 	if (guiEnter == 1)

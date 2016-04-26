@@ -52,7 +52,7 @@ void Maze::placeStairs(void)
 	{
 		j = rand() % MAZE_SIZE;
 		k = rand() % MAZE_SIZE;
-		if (mMansion[0][j][k] == mMansion[1][j][k] == 9)
+		if (mMansion[0][j][k] == mMansion[1][j][k] && mMansion[0][j][k] == 9)
 		{
 			success = true;
 			mMansion[0][j][k] = mMansion[1][j][k] = 2;
@@ -63,7 +63,7 @@ void Maze::placeStairs(void)
 	{
 		j = rand() % MAZE_SIZE;
 		k = rand() % MAZE_SIZE;
-		if (mMansion[1][j][k] == mMansion[2][j][k])
+		if (mMansion[1][j][k] == mMansion[2][j][k] && mMansion[1][j][k] == 9)
 		{
 			success = true;
 			mMansion[1][j][k] = mMansion[2][j][k] = 3;
