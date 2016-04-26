@@ -1,12 +1,19 @@
 #include "player.h"
 
-Player::Player(int newHitPoints, int newAttackAccuracy, int newHitEvasiveness, int newWeaponDamage, string newWeaponName)
+Player::Player(int newMax, int newHitPoints, int newAttackAccuracy, int newHitEvasiveness,
+	int newWeaponDamage, string newWeaponName)
 {
+	maxHitPoints = newMax;
 	hitPoints = newHitPoints;
 	attackAccuracy = newAttackAccuracy;
 	weaponDamage = newWeaponDamage;
 	weaponName = newWeaponName;
 	hitEvasiveness = newHitEvasiveness;
+}
+
+void Player::setMaxHitPoints(int newMax)
+{
+	maxHitPoints = newMax;
 }
 
 void Player::setHitPoints(int newHitPoints)
@@ -32,6 +39,11 @@ void Player::setWeaponDamage(int newWeaponDamage)
 void Player::setWeaponName(string newWeaponName)
 {
 	weaponName = newWeaponName;
+}
+
+int Player::getMaxHitPoints()
+{
+	return maxHitPoints;
 }
 
 int Player::getHitPoints()

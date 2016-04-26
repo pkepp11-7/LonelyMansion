@@ -26,19 +26,23 @@ typedef struct coordinate
 class Player
 {
 public:
-	Player(int newHitPoints = 3, int newAttackAccuracy = 100, int newHitEvasiveness = 90, int newWeaponDamage = 0, string newWeaponName = "short sword");
+	Player(int newMax = 3, int newHitPoints = 3, int newAttackAccuracy = 100, int newHitEvasiveness = 90,
+		int newWeaponDamage = 0, string newWeaponName = "short sword");
 	~Player() {};
+	void setMaxHitPoints(int newMax);
 	void setHitPoints(int newHitPoints);
 	void setHitEvasiveness(int newHitEvasiveness);
 	void setAttackAccuracy(int newAttackAccuracy);
 	void setWeaponDamage(int newWeaponDamage);
 	void setWeaponName(string newWeaponName);
+	int getMaxHitPoints();
 	int getHitPoints();
 	int getHitEvasiveness();
 	int getAttackAccuracy();
 	int getWeaponDamage();
 	string getWeaponName();
 private:
+	int maxHitPoints;
 	int hitPoints;
 	int hitEvasiveness;
 	int attackAccuracy;
