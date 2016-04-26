@@ -6,6 +6,7 @@ Player::Player(int newHitPoints = 3, double newAttackAccuracy = 1.0, int newWeap
 	attackAccuracy = newAttackAccuracy;
 	weaponDamage = newWeaponDamage;
 	weaponName = newWeaponName;
+	
 }
 
 void Player::setHitPoints(int newHitPoints)
