@@ -6,7 +6,7 @@ Player::Player(int newHitPoints, int newAttackAccuracy, int newHitEvasiveness, i
 	attackAccuracy = newAttackAccuracy;
 	weaponDamage = newWeaponDamage;
 	weaponName = newWeaponName;
-	
+	hitEvasiveness = newHitEvasiveness;
 }
 
 void Player::setHitPoints(int newHitPoints)
