@@ -158,11 +158,13 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Maze.cpp" />
-    <ClCompile Include="person.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="room.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Maze.h" />
-    <ClInclude Include="person.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="room.h" />
     <ClInclude Include="TestMaze.h" />
   </ItemGroup>
   <ItemGroup>

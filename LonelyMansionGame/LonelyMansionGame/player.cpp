@@ -1,6 +1,6 @@
 #include "person.h"
 
-Player::Player(int newHitPoints = 3, double newAttackAccuracy = 1.0, int newWeaponDamage = 0, string newWeaponName = "short sword")
+Player::Player(int newHitPoints, double newAttackAccuracy, int newWeaponDamage, string newWeaponName)
 {
 	hitPoints = newHitPoints;
 	attackAccuracy = newAttackAccuracy;
