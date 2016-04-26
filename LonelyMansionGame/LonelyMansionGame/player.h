@@ -26,7 +26,7 @@ typedef struct coordinate
 class Player
 {
 public:
-	Player(int newHitPoints = 3, int newAttackAccuracy = 100, int newWeaponDamage = 0, string newWeaponName = "short sword");
+	Player(int newHitPoints = 3, int newAttackAccuracy = 100, int newHitEvasiveness = 90, int newWeaponDamage = 0, string newWeaponName = "short sword");
 	~Player() {};
 	void setHitPoints(int newHitPoints);
 	void setHitEvasiveness(int newHitEvasiveness);

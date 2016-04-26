@@ -1,6 +1,6 @@
 #include "player.h"
 
-Player::Player(int newHitPoints, int newAttackAccuracy, int newWeaponDamage, string newWeaponName)
+Player::Player(int newHitPoints, int newAttackAccuracy, int newHitEvasiveness, int newWeaponDamage, string newWeaponName)
 {
 	hitPoints = newHitPoints;
 	attackAccuracy = newAttackAccuracy;
@@ -11,6 +11,11 @@ Player::Player(int newHitPoints, int newAttackAccuracy, int newWeaponDamage, str
 void Player::setHitPoints(int newHitPoints)
 {
 	hitPoints = newHitPoints;
+}
+
+void Player::setHitEvasiveness(int newHitEvasiveness)
+{
+	hitEvasiveness = newHitEvasiveness;
 }
 
 void Player::setAttackAccuracy(int newAttackAccuracy)
@@ -36,6 +41,11 @@ int Player::getHitPoints()
 int Player::getAttackAccuracy()
 {
 	return attackAccuracy;
+}
+
+int Player::getHitEvasiveness()
+{
+	return hitEvasiveness;
 }
 
 int Player::getWeaponDamage()
