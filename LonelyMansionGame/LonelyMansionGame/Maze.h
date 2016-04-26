@@ -1,23 +1,19 @@
 #pragma once
-#include <time.h>
-#include <cstdlib>
-#include <fstream>
-
-using std::fstream;
+#include "person.h"
 
 //adjust maze size here if needed
-#define MAZE_SIZE 10
-#define FLOORS 3
-#define ROOMS 50
+
 
 
 class Maze
 {
 private:
 	int mMansion[FLOORS][MAZE_SIZE][MAZE_SIZE];
+	Coordinate myPos;
 	void placeVictoryRoom(void);
 	void placeStairs(void);
 	void placeRooms(void);
+	void getStartPos(void);
 public:
 	Maze();
 };

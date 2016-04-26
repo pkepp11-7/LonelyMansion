@@ -17,7 +17,7 @@ Maze::Maze()
 	infile.close();
 	placeVictoryRoom();
 	placeStairs();
-
+	getStartPos();
 }
 
 bool weightedChance(int percentage)
@@ -87,4 +87,15 @@ void Maze::placeRooms(void)
 			}
 		}
 	}
+}
+
+
+void Maze::getStartPos(void)
+{
+	do
+	{
+		myPos.z = rand() % FLOORS;
+		myPos.x = rand() % MAZE_SIZE;
+		myPos.y = rand() % MAZE_SIZE;
+	} while (mMansion[myPos.z][myPos.x][myPos.y]);
 }
