@@ -2,11 +2,26 @@
 
 #include <iostream>
 #include <string>
+#include <time.h>
+#include <cstdlib>
+#include <fstream>
 
+using std::fstream;
 using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
+
+#define MAZE_SIZE 10
+#define FLOORS 3
+#define ROOMS 50
+
+typedef struct coordinate
+{
+	int x;
+	int y;
+	int z;
+}Coordinate;
 
 class Player
 {
@@ -26,4 +41,5 @@ private:
 	int attackAccuracy;
 	int weaponDamage;
 	string weaponName;
+	
 };

@@ -1,6 +1,6 @@
 #pragma once
-#include "person.h"
-
+#include "player.h"
+#include "room.h"
 //adjust maze size here if needed
 
 
