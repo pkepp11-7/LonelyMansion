@@ -1,6 +1,6 @@
-#include "person.h"
+#include "player.h"
 
-Player::Player(int newHitPoints, double newAttackAccuracy, int newWeaponDamage, string newWeaponName)
+Player::Player(int newHitPoints, int newAttackAccuracy, int newWeaponDamage, string newWeaponName)
 {
 	hitPoints = newHitPoints;
 	attackAccuracy = newAttackAccuracy;
